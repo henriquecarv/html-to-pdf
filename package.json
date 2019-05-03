@@ -1,0 +1,40 @@
+{
+	"name": "html-to-pdf",
+	"version": "1.0.0",
+	"description": "Converting HTML template to PDF files",
+	"private": true,
+	"main": "src/index.js",
+	"scripts": {
+		"start": "nodemon .",
+		"linter": "run-p lint stylelint htmlhint",
+		"lint": "eslint . --fix",
+		"stylelint": "stylelint \"template/**/*.css\" --fix",
+		"htmlhint": "htmlhint --ignore template"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://henriquecarv@github.com/henriquecarv/html-to-pdf.git"
+	},
+	"keywords": [
+		"chart",
+		"pdf"
+	],
+	"author": "Henrique Carvalho da Cruz <henriquecarv.cruz@gmail.com> (https://henriquecarv.com)",
+	"license": "MIT",
+	"homepage": "https://github.com/henriquecarv/html-to-pdf#readme",
+	"issues": "https://github.com/henriquecarv/html-to-pdf/issues",
+	"dependencies": {
+		"handlebars": "^4.1.2",
+		"puppeteer": "~1.10.0"
+	},
+	"devDependencies": {
+		"eslint": "^5.16.0",
+		"eslint-config-google": "^0.12.0",
+		"htmlhint": "^0.11.0",
+		"husky": "^2.2.0",
+		"nodemon": "^1.19.0",
+		"npm-run-all": "^4.1.5",
+		"stylelint": "^10.0.1",
+		"stylelint-config-recommended": "^2.2.0"
+	}
+}
