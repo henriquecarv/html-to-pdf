@@ -16,6 +16,54 @@ Converting HTML template to PDF files
 
 - `npm install html-to-pdf-studio`
 
+## Usage
+
+Compiling a [handlebars HTML template](./templates/invoice.hbs)
+
+```javascript
+const fs = require("fs");
+const path = require("path");
+const { compileHTML } = require("html-to-pdf-studio");
+
+const cssPath = path.join(__dirname, "./templates/style.css");
+const css = fs.readFileSync(cssPath);
+
+const htmlPath = path.join(__dirname, "./templates/invoice.hbs");
+const html = fs.readFileSync(htmlPath);
+
+let data = require("./templates/data.json");
+const dataBinding = Object.assign(data, { css });
+
+const compiledHTML = compileHTML(html, dataBinding);
+```
+
+Create PDF file from final HTML compiled with handlebars previously demonstrated
+
+```javascript
+const path = require("path");
+const { createPDF } = require("html-to-pdf-studio");
+
+const fileName = "invoide.pdf";
+const outputPath = path.join(__dirname, "./output");
+
+const pdfOptions = {
+	format: "A4",
+	headerTemplate: "<p></p>",
+	footerTemplate: "<p></p>",
+	displayHeaderFooter: false,
+	margin: {
+		top: "40px",
+		bottom: "100px"
+	},
+	printBackground: true,
+	path: path.join(outputPath, fileName)
+};
+
+(async () => {
+	await createPDF(compiledHTML, pdfOptions);
+})();
+```
+
 ### Inspiration
 
 [tranchuong][6] - [html_to_pdf][7]

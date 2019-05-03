@@ -1,4 +1,4 @@
-const compileHTML = require('./utils/compileHTML');
-const createPDF = require('./utils/createPDF');
+const compileHTML = require('./lib/compileHTML');
+const createPDF = require('./lib/createPDF');
 
 module.exports = {compileHTML, createPDF};
