@@ -14,9 +14,13 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
+	
+- script: |
+		npm i -g npm
+	displayName: 'Update npm cli'
 
 - script: |
-    npm Install
+    npm install
   displayName: 'Install npm packages'
 
 - script: |
