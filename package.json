@@ -1,6 +1,6 @@
 {
 	"name": "html-to-pdf-studio",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Converting HTML template to PDF files",
 	"main": "src/index.js",
 	"scripts": {
