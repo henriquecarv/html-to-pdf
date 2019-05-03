@@ -5,6 +5,9 @@ const handlebars = require('handlebars');
 const cssPath = path.join(__dirname, './../../template/styles/style.css');
 const css = fs.readFileSync(cssPath);
 
+const svgPath = path.join(__dirname, './../../template/assets/svg/pie.svg');
+const svg = fs.readFileSync(svgPath, 'utf8');
+
 /**
  * Compile HTML using Handlebars
  * @param {String} htmlFilePath HTML file path
@@ -29,6 +32,7 @@ const compileHTML = (htmlFilePath) => {
     total: 600,
     isWatermark: false,
     css,
+    svg,
   };
 
   const templateHtml = fs.readFileSync(htmlFilePath, 'utf8');

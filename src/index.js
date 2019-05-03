@@ -5,7 +5,7 @@ const compileHTML = require('./utils/compileHTML');
 const createPDF = require('./utils/createPDF');
 
 (async () => {
-  const htmlFilePath = path.join(__dirname, './../template/invoice.html');
+  const htmlFilePath = path.join(__dirname, './../template/invoice.hbs');
   const finalHTML = compileHTML(htmlFilePath);
 
   const outputPath = path.join(__dirname, './../output');

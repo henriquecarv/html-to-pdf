@@ -6,8 +6,8 @@
 	"main": "src/index.js",
 	"scripts": {
 		"start": "nodemon .",
-		"linter": "run-p lint stylelint htmlhint",
-		"lint": "eslint . --fix",
+		"linter": "run-p eslint stylelint htmlhint",
+		"eslint": "eslint . --fix",
 		"stylelint": "stylelint \"template/**/*.css\" --fix",
 		"htmlhint": "htmlhint --ignore template"
 	},
