@@ -2,6 +2,7 @@
 
 Converting HTML template to PDF files
 
+[![Build Status](https://dev.azure.com/henriquecarvgit/henriquecarvgit/_apis/build/status/henriquecarv.html-to-pdf-studio?branchName=master)](https://dev.azure.com/henriquecarvgit/henriquecarvgit/_build/latest?definitionId=12)
 [![npm](https://img.shields.io/npm/dt/html-to-pdf-studio.svg)][4]
 [![npm](https://img.shields.io/npm/v/html-to-pdf-studio.svg)][4]
 [![LICENSE](https://img.shields.io/github/license/henriquecarv/html-to-pdf-studio.svg)][2]
