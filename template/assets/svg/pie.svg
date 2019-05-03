@@ -1,4 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="500"><defs><style type="text/css"><![CDATA[ 
-    .arc text {font: 10px sans-serif; text-anchor: middle;}
-    .arc path {stroke: #fff;}
-   ]]></style></defs><g transform="translate( 200 , 200 )"><g class="arc"><path d="M1.1634e-14,-190A190,190,0,0,1,164.5448,95.0000L0,0Z" style="fill: #1f77b4;"></path><text transform="translate(138.5640646055102,-79.99999999999997)" dy=".35em">first value</text></g><g class="arc"><path d="M164.5448,95.0000A190,190,0,0,1,-164.5448,95.0000L0,0Z" style="fill: #ff7f0e;"></path><text transform="translate(-6.12570991828312e-14,160)" dy=".35em">seconde value</text></g><g class="arc"><path d="M-164.5448,95.0000A190,190,0,0,1,1.3385e-13,-190L0,0Z" style="fill: #2ca02c;"></path><text transform="translate(-138.5640646055101,-80.00000000000014)" dy=".35em">third value</text></g></g></svg>
