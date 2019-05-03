@@ -32,12 +32,13 @@ const compileHTML = (htmlFilePath) => {
     total: 600,
     isWatermark: false,
     css,
-    svg,
   };
 
   const templateHtml = fs.readFileSync(htmlFilePath, 'utf8');
 
-  const template = handlebars.compile(templateHtml.repeat(6));
+  const templateWithSVG = [templateHtml, svg].join('');
+
+  const template = handlebars.compile(templateWithSVG);
 
   return template(dataBinding);
 };
