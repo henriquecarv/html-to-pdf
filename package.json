@@ -14,8 +14,11 @@
 		"url": "git+https://henriquecarv@github.com/henriquecarv/html-to-pdf-studio.git"
 	},
 	"keywords": [
-		"chart",
-		"pdf"
+		"html",
+		"pdf",
+		"handlebars",
+		"puppeteer",
+		"henriquecarv"
 	],
 	"author": "Henrique Carvalho da Cruz <henriquecarv.cruz@gmail.com> (https://henriquecarv.com)",
 	"license": "MIT",
