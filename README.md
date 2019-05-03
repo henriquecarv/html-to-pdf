@@ -2,6 +2,7 @@
 
 Converting HTML template to PDF files
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/56a21e6eac6f4204beac78eefb05747d)](https://www.codacy.com/app/henriquecarv/html-to-pdf-studio?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=henriquecarv/html-to-pdf-studio&amp;utm_campaign=Badge_Grade)
 [![Build Status](https://dev.azure.com/henriquecarvgit/henriquecarvgit/_apis/build/status/henriquecarv.html-to-pdf-studio?branchName=master)](https://dev.azure.com/henriquecarvgit/henriquecarvgit/_build/latest?definitionId=12)
 [![npm](https://img.shields.io/npm/dt/html-to-pdf-studio.svg)][4]
 [![npm](https://img.shields.io/npm/v/html-to-pdf-studio.svg)][4]
