@@ -27,10 +27,10 @@ const path = require("path");
 const { compileHTML } = require("html-to-pdf-studio");
 
 const cssPath = path.join(__dirname, "./templates/style.css");
-const css = fs.readFileSync(cssPath);
+const css = fs.readFileSync(cssPath, "utf8");
 
 const htmlPath = path.join(__dirname, "./templates/invoice.hbs");
-const html = fs.readFileSync(htmlPath);
+const html = fs.readFileSync(htmlPath, "utf8");
 
 let data = require("./templates/data.json");
 const dataBinding = Object.assign(data, { css });
