@@ -19,20 +19,20 @@ Converting HTML template to PDF files
 
 ## Usage
 
-Compiling a [handlebars HTML template](./templates/invoice.hbs)
+Compiling a [handlebars HTML template](./example/templates/index.html)
 
 ```javascript
 const fs = require("fs");
 const path = require("path");
-const { compileHTML } = require("html-to-pdf-studio");
+const { compileHTML, createPDF } = require("html-to-pdf-studio");
 
-const cssPath = path.join(__dirname, "./templates/style.css");
+const cssPath = path.join(__dirname, "./example/templates/style.css");
 const css = fs.readFileSync(cssPath, "utf8");
 
-const htmlPath = path.join(__dirname, "./templates/invoice.hbs");
+const htmlPath = path.join(__dirname, "./example/templates/index.html");
 const html = fs.readFileSync(htmlPath, "utf8");
 
-let data = require("./templates/data.json");
+let data = require("./example/templates/data.json");
 const dataBinding = Object.assign(data, { css });
 
 const compiledHTML = compileHTML(html, dataBinding);
@@ -45,7 +45,7 @@ const path = require("path");
 const { createPDF } = require("html-to-pdf-studio");
 
 const fileName = "invoide.pdf";
-const outputPath = path.join(__dirname, "./output");
+const outputPath = path.join(__dirname, "./example/output");
 
 if (!fs.existsSync(outputPath)) fs.mkdirSync(outputPath);
 
@@ -69,7 +69,7 @@ const pdfOptions = {
 
 ### Inspiration
 
-[tranchuong][6] - [html_to_pdf][7]
+[tranchuong][5] - [html_to_pdf][6]
 
 ### License
 
@@ -79,6 +79,5 @@ Copylefted (c) 2019 [Henrique Carvalho da Cruz][1] Licensed under the [MIT licen
 [2]: ./LICENSE
 [3]: https://nodejs.org
 [4]: https://www.npmjs.com/package/html-to-pdf-studio
-[5]: https://dependabot.com
-[6]: https://github.com/chuongtrh
-[7]: https://github.com/chuongtrh/html_to_pdf
+[5]: https://github.com/chuongtrh
+[6]: https://github.com/chuongtrh/html_to_pdf
