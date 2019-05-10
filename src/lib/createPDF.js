@@ -12,9 +12,7 @@ const createPDF = async (html, pdfOptions) => {
     headless: true,
   });
   const page = await browser.newPage();
-  await page.goto(`data:text/html,${html}`, {
-    waitUntil: 'networkidle0',
-  });
+  await page.setContent(html);
   const pdf = await page.pdf(pdfOptions);
   await browser.close();
 
