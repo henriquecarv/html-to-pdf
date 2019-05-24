@@ -8,7 +8,7 @@
 		"dev": "nodemon .",
 		"linter": "run-p eslint",
 		"eslint": "eslint . --fix",
-		"prepublish": "node ./scripts/npm-login.js"
+		"prepublishOnly": "node ./scripts/npm-login.js"
 	},
 	"repository": {
 		"type": "git",
