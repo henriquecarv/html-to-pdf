@@ -30,8 +30,8 @@
 		"puppeteer": "^1.19.0"
 	},
 	"devDependencies": {
-		"dotenv": "^8.0.0",
-		"eslint": "^6.1.0",
+		"dotenv": "^8.1.0",
+		"eslint": "^6.2.2",
 		"eslint-config-google": "^0.13.0",
 		"eslint-plugin-markdown": "^1.0.0",
 		"husky": "^3.0.3",
