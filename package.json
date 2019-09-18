@@ -7,8 +7,7 @@
 		"start": "node .",
 		"dev": "nodemon .",
 		"linter": "run-p eslint",
-		"eslint": "eslint . --fix",
-		"prepublishOnly": "node ./scripts/npm-login.js"
+		"eslint": "eslint . --fix"
 	},
 	"repository": {
 		"type": "git",
@@ -26,19 +25,18 @@
 	"homepage": "https://github.com/henriquecarv/html-to-pdf-studio#readme",
 	"issues": "https://github.com/henriquecarv/html-to-pdf-studio/issues",
 	"dependencies": {
-		"handlebars": "^4.1.2",
-		"puppeteer": "^1.19.0"
+		"handlebars": "^4.2.0",
+		"puppeteer": "^1.20.0"
 	},
 	"devDependencies": {
 		"dotenv": "^8.1.0",
-		"eslint": "^6.2.2",
+		"eslint": "^6.4.0",
 		"eslint-config-google": "^0.14.0",
 		"eslint-plugin-markdown": "^1.0.0",
-		"husky": "^3.0.3",
-		"nodemon": "^1.19.1",
-		"npm-cli-login": "^0.1.1",
+		"husky": "^3.0.5",
+		"nodemon": "^1.19.2",
 		"npm-run-all": "^4.1.5",
-		"stylelint": "^10.1.0",
+		"stylelint": "^11.0.0",
 		"stylelint-config-recommended": "^3.0.0"
 	}
 }
