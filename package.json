@@ -25,7 +25,7 @@
 	"homepage": "https://github.com/henriquecarv/html-to-pdf-studio#readme",
 	"issues": "https://github.com/henriquecarv/html-to-pdf-studio/issues",
 	"dependencies": {
-		"handlebars": "^4.2.0",
+		"handlebars": "^4.3.1",
 		"puppeteer": "^1.20.0"
 	},
 	"devDependencies": {
