@@ -1,4 +1,4 @@
-const puppeteer = require('puppeteer');
+const puppeteer = require("puppeteer");
 
 /**
  * Create PDF from HTML
@@ -8,8 +8,8 @@ const puppeteer = require('puppeteer');
  */
 const createPDF = async (html, pdfOptions) => {
   const browser = await puppeteer.launch({
-    args: ['--no-sandbox'],
-    headless: true,
+    args: ["--no-sandbox"],
+    headless: true
   });
   const page = await browser.newPage();
   await page.setContent(html);

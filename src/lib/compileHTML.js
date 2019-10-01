@@ -1,4 +1,4 @@
-const handlebars = require('handlebars');
+const handlebars = require("handlebars");
 
 /**
  * Compile HTML using Handlebars
