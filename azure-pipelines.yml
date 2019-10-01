@@ -4,25 +4,25 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- master
+  - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: "ubuntu-latest"
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
+  - task: NodeTool@0
+    inputs:
+      versionSpec: "10.x"
+    displayName: "Install Node.js"
 
-- script: |
-    npm i -g npm
-  displayName: 'Update npm cli'
+  - script: |
+      npm i -g npm
+    displayName: "Update npm cli"
 
-- script: |
-    npm install
-  displayName: 'Install npm packages'
+  - script: |
+      npm install
+    displayName: "Install npm packages"
 
-- script: |
-    npm run linter
-  displayName: 'Linter tests'
+  - script: |
+      npm run lint
+    displayName: "Lint tests"
