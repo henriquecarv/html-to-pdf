@@ -7,3 +7,4 @@ example/
 .stylelint*
 azure-*
 *.md
+yarn.lock
