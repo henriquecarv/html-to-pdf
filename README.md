@@ -3,7 +3,6 @@
 Converting HTML template to PDF files
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/56a21e6eac6f4204beac78eefb05747d)](https://www.codacy.com/app/henriquecarv/html-to-pdf-studio?utm_source=github.com&utm_medium=referral&utm_content=henriquecarv/html-to-pdf-studio&utm_campaign=Badge_Grade)
-[![Build Status](https://dev.azure.com/henriquecarvgit/henriquecarvgit/_apis/build/status/henriquecarv.html-to-pdf-studio?branchName=master)](https://dev.azure.com/henriquecarvgit/henriquecarvgit/_build/latest?definitionId=12)
 [![npm](https://img.shields.io/npm/dt/html-to-pdf-studio.svg)][4]
 [![npm](https://img.shields.io/npm/v/html-to-pdf-studio.svg)][4]
 [![LICENSE](https://img.shields.io/github/license/henriquecarv/html-to-pdf-studio.svg)][2]
@@ -15,7 +14,7 @@ Converting HTML template to PDF files
 
 ## Installing
 
-- `npm install html-to-pdf-studio`
+- `yarn add html-to-pdf-studio`
 
 ## Usage
 
@@ -50,20 +49,20 @@ const outputPath = path.join(__dirname, "./example/output");
 if (!fs.existsSync(outputPath)) fs.mkdirSync(outputPath);
 
 const pdfOptions = {
-	format: "A4",
-	headerTemplate: "<p></p>",
-	footerTemplate: "<p></p>",
-	displayHeaderFooter: false,
-	margin: {
-		top: "40px",
-		bottom: "100px"
-	},
-	printBackground: true,
-	path: path.join(outputPath, fileName)
+  format: "A4",
+  headerTemplate: "<p></p>",
+  footerTemplate: "<p></p>",
+  displayHeaderFooter: false,
+  margin: {
+    top: "40px",
+    bottom: "100px",
+  },
+  printBackground: true,
+  path: path.join(outputPath, fileName),
 };
 
 (async () => {
-	await createPDF(compiledHTML, pdfOptions);
+  await createPDF(compiledHTML, pdfOptions);
 })();
 ```
 

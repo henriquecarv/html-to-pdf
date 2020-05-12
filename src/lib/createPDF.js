@@ -9,7 +9,7 @@ const puppeteer = require("puppeteer");
 const createPDF = async (html, pdfOptions) => {
   const browser = await puppeteer.launch({
     args: ["--no-sandbox"],
-    headless: true
+    headless: true,
   });
   const page = await browser.newPage();
   await page.setContent(html);

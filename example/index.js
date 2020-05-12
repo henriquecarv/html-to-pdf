@@ -26,10 +26,10 @@ const pdfOptions = {
   displayHeaderFooter: false,
   margin: {
     top: "40px",
-    bottom: "100px"
+    bottom: "100px",
   },
   printBackground: true,
-  path: path.join(outputPath, fileName)
+  path: path.join(outputPath, fileName),
 };
 
 (async () => {
