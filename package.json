@@ -26,7 +26,7 @@
   "issues": "https://github.com/henriquecarv/html-to-pdf-studio/issues",
   "dependencies": {
     "handlebars": "^4.7.6",
-    "puppeteer": "^3.0.4"
+    "puppeteer": "^5.1.0"
   },
   "devDependencies": {
     "dotenv": "^8.2.0",
